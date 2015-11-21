@@ -1,0 +1,40 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+     android:id="@+id/container" >
+     <TextView 
+    android:id="@+id/gyro"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_above="@+id/keyboardview"
+        android:textColor="#FFFFFF"
+        android:background="@drawable/border"
+        android:paddingBottom="4sp"
+        android:paddingTop="0sp"
+        android:textSize="25sp"
+        android:textAlignment="center"
+        android:gravity="center"
+    />
+ <EditText
+        android:id="@+id/edittext0"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:inputType="textCapSentences" />
+
+    
+
+    <android.inputmethodservice.KeyboardView
+        android:id="@+id/keyboardview"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:visibility="gone"
+       />
+
+</RelativeLayout>
